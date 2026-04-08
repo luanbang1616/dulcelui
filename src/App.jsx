@@ -48,6 +48,13 @@ function App() {
       description: 'Variedad de maní tostado y caramelizado',
       image: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&h=400&fit=crop',
       tag: 'Snack'
+    },
+    {
+      id: 6,
+      name: 'Galletas',
+      description: 'Galletas crujientes artesanal',
+      image: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=400&fit=crop',
+      tag: 'Clásico'
     }
   ]
 
