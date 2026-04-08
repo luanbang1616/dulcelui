@@ -15,6 +15,13 @@ function App() {
 
   const products = [
     {
+      id: 1,
+      name: 'Cupcakes',
+      description: 'Cupcakes moistos con frosting premium',
+      image: 'https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=400&fit=crop',
+      tag: 'Trending'
+    },
+    {
       id: 2,
       name: 'Brownies',
       description: 'Brownies esponjosos con chocolate premium',
