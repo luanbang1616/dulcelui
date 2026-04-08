@@ -61,9 +61,8 @@ function App() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }, 50)
+      const top = element.getBoundingClientRect().top + window.pageYOffset - 80
+      window.scrollTo({ top: top, behavior: 'smooth' })
     }
     setMenuOpen(false)
   }
