@@ -61,8 +61,10 @@ function App() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     if (element) {
-      const top = element.getBoundingClientRect().top + window.pageYOffset - 80
-      window.scrollTo({ top: top, behavior: 'smooth' })
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      })
     }
     setMenuOpen(false)
   }
@@ -77,12 +79,20 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-content">
           <div className="nav-logo" onClick={() => scrollToSection('inicio')}>
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-              <path d="M25 5C25 5 20 15 20 22C20 26 22 30 25 30C28 30 30 26 30 22C30 15 25 5 25 5Z" fill="#C21121"/>
-              <path d="M25 30L25 38" stroke="#B3E6GB" strokeWidth="3" strokeLinecap="round"/>
-              <path d="M18 38H32" stroke="#B3E6GB" strokeWidth="3" strokeLinecap="round"/>
-              <ellipse cx="25" cy="22" rx="8" ry="10" fill="#e63946"/>
-              <circle cx="25" cy="18" r="3" fill="#B3E6GB"/>
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#C21121"/>
+                  <stop offset="100%" stopColor="#e63946"/>
+                </linearGradient>
+              </defs>
+              <circle cx="30" cy="30" r="28" fill="url(#logoGrad)"/>
+              <path d="M18 42 C18 42, 22 28, 30 22 C38 28, 42 42, 42 42" stroke="#B3E6GB" strokeWidth="3" fill="none" strokeLinecap="round"/>
+              <circle cx="30" cy="32" r="10" fill="#B3E6GB"/>
+              <circle cx="30" cy="32" r="5" fill="#C21121"/>
+              <path d="M20 20 Q30 15 40 20" stroke="#B3E6GB" strokeWidth="2" fill="none" strokeLinecap="round"/>
+              <circle cx="18" cy="25" r="2" fill="#B3E6GB"/>
+              <circle cx="42" cy="25" r="2" fill="#B3E6GB"/>
             </svg>
             <span className="nav-logo-text">Dulce Lui</span>
           </div>
@@ -302,12 +312,20 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
-            <svg width="60" height="60" viewBox="0 0 50 50" fill="none">
-              <path d="M25 5C25 5 20 15 20 22C20 26 22 30 25 30C28 30 30 26 30 22C30 15 25 5 25 5Z" fill="#C21121"/>
-              <path d="M25 30L25 38" stroke="#B3E6GB" strokeWidth="3" strokeLinecap="round"/>
-              <path d="M18 38H32" stroke="#B3E6GB" strokeWidth="3" strokeLinecap="round"/>
-              <ellipse cx="25" cy="22" rx="8" ry="10" fill="#e63946"/>
-              <circle cx="25" cy="18" r="3" fill="#B3E6GB"/>
+            <svg width="80" height="80" viewBox="0 0 60 60" fill="none">
+              <defs>
+                <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#C21121"/>
+                  <stop offset="100%" stopColor="#e63946"/>
+                </linearGradient>
+              </defs>
+              <circle cx="30" cy="30" r="28" fill="url(#footerLogoGrad)"/>
+              <path d="M18 42 C18 42, 22 28, 30 22 C38 28, 42 42, 42 42" stroke="#B3E6GB" strokeWidth="3" fill="none" strokeLinecap="round"/>
+              <circle cx="30" cy="32" r="10" fill="#B3E6GB"/>
+              <circle cx="30" cy="32" r="5" fill="#C21121"/>
+              <path d="M20 20 Q30 15 40 20" stroke="#B3E6GB" strokeWidth="2" fill="none" strokeLinecap="round"/>
+              <circle cx="18" cy="25" r="2" fill="#B3E6GB"/>
+              <circle cx="42" cy="25" r="2" fill="#B3E6GB"/>
             </svg>
             <h3>Dulce Lui</h3>
             <p>Dulzura en cada momento</p>
