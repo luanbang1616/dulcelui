@@ -118,9 +118,9 @@ function App() {
             </h1>
             <p className="hero-subtitle">Donde cada bocado es una experiencia única</p>
             <p className="hero-tagline">Repostería artesanal con amor y tradición</p>
-            <a href="#productos" className="cta-button" onClick={(e) => {e.preventDefault(); scrollToSection('productos')}}>
+            <button className="cta-button" onClick={() => scrollToSection('productos')}>
               Ver Productos
-            </a>
+            </button>
           </div>
           <div className="hero-image">
             <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=600&h=500&fit=crop" alt="Dulces" />
