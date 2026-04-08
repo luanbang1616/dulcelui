@@ -24,7 +24,7 @@ function App() {
     {
       id: 2,
       name: 'Brownies',
-      description: 'Brownies esponjosos con chocolate premium',
+      description: 'Brownies de chocolate con nueces',
       image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop',
       tag: 'Caseros'
     },
