@@ -18,7 +18,7 @@ function App() {
       id: 1,
       name: 'Cupcakes',
       description: 'Deliciosos cupcakes con frosting artesanal',
-      image: 'https://images.unsplash.com/photo-1486427944544-d2c6128e451c?w=600&h=400&fit=crop',
+      image: 'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&h=400&fit=crop',
       tag: 'Producto Estrella'
     },
     {
