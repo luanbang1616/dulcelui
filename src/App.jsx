@@ -19,7 +19,7 @@ function App() {
       name: 'Cupcakes',
       description: 'Cupcakes moistos con frosting premium',
       image: 'https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=600&h=400&fit=crop',
-      tag: 'Trending'
+      tag: 'Producto Estrella'
     },
     {
       id: 2,
