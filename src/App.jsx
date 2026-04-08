@@ -118,7 +118,7 @@ function App() {
             </h1>
             <p className="hero-subtitle">Donde cada bocado es una experiencia única</p>
             <p className="hero-tagline">Repostería artesanal con amor y tradición</p>
-            <a className="cta-button" onClick={(e) => {e.preventDefault(); scrollToSection('productos')}}>
+            <a href="#productos" className="cta-button" onClick={(e) => {e.preventDefault(); scrollToSection('productos')}}>
               Ver Productos
             </a>
           </div>
